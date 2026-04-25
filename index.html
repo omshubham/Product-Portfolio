@@ -799,6 +799,35 @@ function closePDFOnOverlay(e) {
 
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closePDF(); });
 
+// ===== SIDEBAR TOGGLE =====
+const sidebar = document.querySelector('[data-sidebar]');
+const sidebarBtn = document.querySelector('[data-sidebar-btn]');
+if (sidebarBtn) {
+  sidebarBtn.addEventListener('click', function() {
+    sidebar.classList.toggle('active');
+  });
+}
+
+// ===== SECTION NAVIGATION =====
+const navLinks = document.querySelectorAll('[data-nav-link]');
+const pages = document.querySelectorAll('article[data-page]');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', function() {
+    const target = this.textContent.trim().toLowerCase();
+    navLinks.forEach(l => l.classList.remove('active'));
+    this.classList.add('active');
+    pages.forEach(page => {
+      if (page.dataset.page === target) {
+        page.classList.add('active');
+      } else {
+        page.classList.remove('active');
+      }
+    });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+});
+
 // ===== PORTFOLIO TAG FILTERING =====
 const tagChips = document.querySelectorAll('.tag-chip');
 const portfolioCards = document.querySelectorAll('.portfolio-card');
