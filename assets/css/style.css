@@ -324,34 +324,34 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 6px;
   width: max-content;
   max-width: 100%;
   white-space: nowrap;
-  background: linear-gradient(135deg, hsla(196, 100%, 62%, 0.18), hsla(220, 100%, 65%, 0.12));
-  border: 1.5px solid hsla(196, 100%, 62%, 0.65);
   color: var(--accent-cyan);
-  font-size: 13px;
+  background: hsla(196, 100%, 62%, 0.1);
+  border: 1px solid hsla(196, 100%, 62%, 0.4);
+  font-size: var(--fs-8);
   font-weight: var(--fw-500);
-  padding: 9px 20px;
-  border-radius: 30px;
+  padding: 6px 16px;
+  border-radius: 20px;
   text-decoration: none;
-  margin: 12px auto 0;
-  box-shadow: 0 0 22px hsla(196, 100%, 62%, 0.3), 0 4px 14px hsla(196, 100%, 62%, 0.15);
+  margin: 8px auto 0;
+  box-shadow: 0 0 12px hsla(196, 100%, 62%, 0.18);
   transition: all var(--transition-1);
   cursor: pointer;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.2px;
 }
 
 .resume-download-btn:hover {
-  background: linear-gradient(135deg, hsla(196, 100%, 62%, 0.3), hsla(220, 100%, 65%, 0.22));
-  border-color: var(--accent-cyan);
-  box-shadow: 0 0 34px hsla(196, 100%, 62%, 0.5), 0 4px 20px hsla(196, 100%, 62%, 0.28);
-  transform: translateY(-2px);
+  background: hsla(196, 100%, 62%, 0.18);
+  border-color: hsla(196, 100%, 62%, 0.7);
+  box-shadow: 0 0 22px hsla(196, 100%, 62%, 0.3);
+  transform: translateY(-1px);
 }
 
 .resume-download-btn ion-icon {
-  font-size: 18px;
+  font-size: 14px;
   color: var(--accent-cyan);
   flex-shrink: 0;
 }
@@ -2400,24 +2400,29 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .org-logo-img--dark {
   background: #1428A0;
-  border-radius: 6px;
-  padding: 6px 8px;
+  border-radius: 8px;
+  padding: 8px 10px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .org-logo-img--light {
   background: #ffffff;
-  border-radius: 6px;
-  padding: 6px 8px;
+  border-radius: 8px;
+  padding: 8px 10px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .org-logo-real {
   display: block;
-  max-width: 88px;
-  max-height: 48px;
-  width: 88px;
-  height: auto;
+  height: 52px;
+  width: auto;
+  max-width: 100%;
   object-fit: contain;
 }
 
