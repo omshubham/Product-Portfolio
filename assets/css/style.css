@@ -93,6 +93,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 a { text-decoration: none; }
 
 li { list-style: none; }
@@ -280,12 +285,12 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 112px;
+  max-height: 155px;
   overflow: hidden;
   transition: var(--transition-2);
 }
 
-.sidebar.active { max-height: 900px; }
+.sidebar.active { max-height: 1800px; }
 
 .sidebar-info {
   position: relative;
@@ -1398,11 +1403,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .sidebar {
-    max-height: 180px;
+    max-height: 200px;
     margin-bottom: 30px;
   }
 
-  .sidebar.active { max-height: 1100px; }
+  .sidebar.active { max-height: 1600px; }
 
   .sidebar-info { gap: 25px; }
 
@@ -1750,6 +1755,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .info-content .title { margin: auto; }
+
+  .resume-download-btn { margin-left: auto; margin-right: auto; }
 
   .info_more-btn { display: none; }
 
@@ -2484,6 +2491,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 @media (max-width: 580px) {
   .domain-expertise-grid { grid-template-columns: repeat(2, 1fr); }
+  .sidebar-org-logos { gap: 8px; }
+  .org-logo-card { padding: 10px 8px 8px; gap: 6px; }
+  .org-logo-real { max-height: 44px; }
 }
 
 .domain-card {
