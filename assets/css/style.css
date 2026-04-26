@@ -321,33 +321,38 @@ main {
 }
 
 .resume-download-btn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 6px;
-  background: hsla(196, 100%, 62%, 0.12);
-  border: 1px solid hsla(196, 100%, 62%, 0.5);
+  justify-content: center;
+  gap: 8px;
+  width: max-content;
+  max-width: 100%;
+  white-space: nowrap;
+  background: linear-gradient(135deg, hsla(196, 100%, 62%, 0.18), hsla(220, 100%, 65%, 0.12));
+  border: 1.5px solid hsla(196, 100%, 62%, 0.65);
   color: var(--accent-cyan);
-  font-size: var(--fs-8);
+  font-size: 13px;
   font-weight: var(--fw-500);
-  padding: 7px 16px;
-  border-radius: 20px;
+  padding: 9px 20px;
+  border-radius: 30px;
   text-decoration: none;
-  margin-top: 10px;
-  box-shadow: 0 0 16px hsla(196, 100%, 62%, 0.2), inset 0 0 8px hsla(196, 100%, 62%, 0.05);
+  margin: 12px auto 0;
+  box-shadow: 0 0 22px hsla(196, 100%, 62%, 0.3), 0 4px 14px hsla(196, 100%, 62%, 0.15);
   transition: all var(--transition-1);
   cursor: pointer;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.4px;
 }
 
 .resume-download-btn:hover {
-  background: hsla(196, 100%, 62%, 0.22);
-  border-color: hsla(196, 100%, 62%, 0.8);
-  box-shadow: 0 0 24px hsla(196, 100%, 62%, 0.35), inset 0 0 12px hsla(196, 100%, 62%, 0.08);
-  transform: translateY(-1px);
+  background: linear-gradient(135deg, hsla(196, 100%, 62%, 0.3), hsla(220, 100%, 65%, 0.22));
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 34px hsla(196, 100%, 62%, 0.5), 0 4px 20px hsla(196, 100%, 62%, 0.28);
+  transform: translateY(-2px);
 }
 
 .resume-download-btn ion-icon {
-  font-size: 14px;
+  font-size: 18px;
+  color: var(--accent-cyan);
   flex-shrink: 0;
 }
 
@@ -355,21 +360,28 @@ main {
   width: 60px;
   height: 60px;
   border-radius: 14px;
-  background: hsla(196, 100%, 62%, 0.1);
-  border: 1px solid hsla(196, 100%, 62%, 0.3);
+  background: hsla(196, 100%, 62%, 0.12);
+  border: 1.5px solid hsla(196, 100%, 62%, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 26px;
+  box-shadow: 0 0 16px hsla(196, 100%, 62%, 0.18);
+}
+
+.award-icon-box ion-icon {
+  font-size: 28px;
   color: var(--accent-cyan);
-  box-shadow: 0 0 14px hsla(196, 100%, 62%, 0.12);
 }
 
 .award-icon-box--modal {
   width: 80px;
   height: 80px;
-  font-size: 34px;
   border-radius: 18px;
+}
+
+.award-icon-box--modal ion-icon {
+  font-size: 36px;
+  color: var(--accent-cyan);
 }
 
 .info_more-btn {
@@ -2365,17 +2377,17 @@ textarea.form-input::-webkit-resizer { display: none; }
   align-items: center;
   gap: 6px;
   padding: 10px 8px;
-  background: hsla(196, 100%, 62%, 0.05);
-  border: 1px solid hsla(196, 100%, 62%, 0.25);
+  background: hsla(196, 100%, 62%, 0.08);
+  border: 1.5px solid hsla(196, 100%, 62%, 0.5);
   border-radius: 12px;
-  box-shadow: 0 0 12px hsla(196, 100%, 62%, 0.08);
+  box-shadow: 0 0 16px hsla(196, 100%, 62%, 0.15), inset 0 0 8px hsla(196, 100%, 62%, 0.04);
   transition: border-color var(--transition-1), box-shadow var(--transition-1);
   height: 100%;
 }
 
 .org-logo-link:hover .org-logo-card {
-  border-color: hsla(196, 100%, 62%, 0.3);
-  box-shadow: 0 4px 16px hsla(222, 50%, 5%, 0.3), 0 0 8px hsla(196, 100%, 62%, 0.08);
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 24px hsla(196, 100%, 62%, 0.3), inset 0 0 10px hsla(196, 100%, 62%, 0.07);
 }
 
 .org-logo-img {
