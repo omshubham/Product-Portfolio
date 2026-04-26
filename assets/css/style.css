@@ -2344,6 +2344,16 @@ textarea.form-input::-webkit-resizer { display: none; }
   overflow: hidden;
 }
 
+.org-logo-real {
+  display: block;
+  max-width: 80px;
+  max-height: 44px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  padding: 4px;
+}
+
 .org-logo-name {
   color: var(--white-2);
   font-size: 11px;
