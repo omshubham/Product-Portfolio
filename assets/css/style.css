@@ -2334,24 +2334,26 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .org-logo-img--dark {
+  background: #1428A0;
   border-radius: 6px;
+  padding: 6px 8px;
   overflow: hidden;
 }
 
 .org-logo-img--light {
+  background: #ffffff;
   border-radius: 6px;
-  border: 1px solid #e8e8e8;
+  padding: 6px 8px;
   overflow: hidden;
 }
 
 .org-logo-real {
   display: block;
-  max-width: 80px;
-  max-height: 44px;
-  width: auto;
+  max-width: 88px;
+  max-height: 48px;
+  width: 88px;
   height: auto;
   object-fit: contain;
-  padding: 4px;
 }
 
 .org-logo-name {
