@@ -309,6 +309,12 @@ main {
 
 .avatar-box img { width: 80px; }
 
+.info-content {
+  flex: 1;
+  min-width: 0;
+  padding-right: 42px;
+}
+
 .info-content .name {
   color: var(--white-2);
   font-size: var(--fs-3);
@@ -323,7 +329,8 @@ main {
   border: 1px solid hsla(196, 100%, 62%, 0.25);
   font-size: var(--fs-8);
   font-weight: var(--fw-400);
-  width: max-content;
+  width: fit-content;
+  max-width: 100%;
   padding: 4px 12px;
   border-radius: 20px;
 }
@@ -1756,6 +1763,8 @@ textarea.form-input::-webkit-resizer { display: none; }
     white-space: nowrap;
     text-align: center;
   }
+
+  .info-content { padding-right: 0; }
 
   .info-content .title { margin: auto; }
 
