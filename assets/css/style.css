@@ -2420,9 +2420,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .org-logo-real {
   display: block;
-  height: 52px;
-  width: auto;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
+  max-height: 56px;
   object-fit: contain;
 }
 
