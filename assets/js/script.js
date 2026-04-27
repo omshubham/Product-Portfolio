@@ -156,3 +156,64 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+// Space background — star field canvas
+(function () {
+  const canvas = document.createElement('canvas');
+  canvas.id = 'space-stars';
+  Object.assign(canvas.style, {
+    position: 'fixed', top: '0', left: '0',
+    width: '100%', height: '100%',
+    zIndex: '-1', pointerEvents: 'none'
+  });
+  document.body.prepend(canvas);
+
+  function drawStars() {
+    canvas.width  = window.innerWidth;
+    canvas.height = window.innerHeight;
+    const ctx = canvas.getContext('2d');
+
+    // Tiny sharp white stars
+    for (let i = 0; i < 260; i++) {
+      const x  = Math.random() * canvas.width;
+      const y  = Math.random() * canvas.height;
+      const r  = Math.random() * 0.85 + 0.15;
+      const op = Math.random() * 0.6 + 0.25;
+      ctx.beginPath();
+      ctx.arc(x, y, r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(255,255,255,${op.toFixed(2)})`;
+      ctx.fill();
+    }
+
+    // Larger glowing stars
+    for (let i = 0; i < 45; i++) {
+      const x  = Math.random() * canvas.width;
+      const y  = Math.random() * canvas.height;
+      const r  = Math.random() * 1.6 + 0.7;
+      const op = Math.random() * 0.5 + 0.38;
+      const g  = ctx.createRadialGradient(x, y, 0, x, y, r * 2.8);
+      g.addColorStop(0, `rgba(255,255,255,${op.toFixed(2)})`);
+      g.addColorStop(1, 'transparent');
+      ctx.beginPath();
+      ctx.arc(x, y, r * 2.8, 0, Math.PI * 2);
+      ctx.fillStyle = g;
+      ctx.fill();
+    }
+
+    // Faint blue-tinted stars
+    for (let i = 0; i < 35; i++) {
+      const x  = Math.random() * canvas.width;
+      const y  = Math.random() * canvas.height;
+      const r  = Math.random() * 1.0 + 0.2;
+      const op = Math.random() * 0.35 + 0.18;
+      ctx.beginPath();
+      ctx.arc(x, y, r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(160,220,255,${op.toFixed(2)})`;
+      ctx.fill();
+    }
+  }
+
+  drawStars();
+  window.addEventListener('resize', drawStars);
+}());
