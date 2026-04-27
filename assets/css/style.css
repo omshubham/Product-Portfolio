@@ -2430,7 +2430,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   box-shadow: 0 0 24px hsla(196, 100%, 62%, 0.3), inset 0 0 10px hsla(196, 100%, 62%, 0.07);
 }
 
-.org-logo-img {
+.org-logo-img--white,
+.org-logo-img--dark {
   width: 100%;
   height: 52px;
   border-radius: 8px;
@@ -2439,38 +2440,19 @@ textarea.form-input::-webkit-resizer { display: none; }
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  padding: 8px 10px;
+  box-sizing: border-box;
 }
 
-.org-logo-img--white {
-  background: #ffffff;
-  width: 54px;
-  height: 54px;
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
+.org-logo-img--white { background: #ffffff; }
 
-.org-logo-img--dark {
-  background: #1428A0;
-  width: 100%;
-  height: 44px;
-  border-radius: 8px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
+.org-logo-img--dark { background: #1428A0; }
 
 .org-logo-real {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: 6px;
 }
 
 .org-logo-name {
@@ -2533,8 +2515,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   .domain-expertise-grid { grid-template-columns: repeat(2, 1fr); }
   .sidebar-org-logos { gap: 8px; }
   .org-logo-card { padding: 10px 6px 8px; gap: 5px; }
-  .org-logo-img--white { width: 46px; height: 46px; }
-  .org-logo-img--dark { height: 38px; }
+  .org-logo-img--white,
+  .org-logo-img--dark { height: 44px; padding: 6px 8px; }
 }
 
 .domain-card {
