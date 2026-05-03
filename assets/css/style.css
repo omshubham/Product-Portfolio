@@ -2026,7 +2026,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .pcard-cover--threadkeep {
-  background: linear-gradient(135deg, #0d4f4f 0%, #0a7c6e 50%, #10b59a 100%);
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 55%, #1e1b4b 100%);
 }
 
 .pcard-cover--move {
