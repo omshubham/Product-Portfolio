@@ -2025,6 +2025,10 @@ textarea.form-input::-webkit-resizer { display: none; }
   background: linear-gradient(135deg, #232f3e 0%, #1a252f 50%, #37475a 100%);
 }
 
+.pcard-cover--threadkeep {
+  background: linear-gradient(135deg, #0d4f4f 0%, #0a7c6e 50%, #10b59a 100%);
+}
+
 .pcard-cover--move {
   background: linear-gradient(135deg, #0d47a1 0%, #1565c0 50%, #1976d2 100%);
 }
@@ -2152,6 +2156,12 @@ textarea.form-input::-webkit-resizer { display: none; }
   background: hsla(196, 100%, 62%, 0.1);
   border: 1px solid hsla(196, 100%, 62%, 0.28);
   color: var(--accent-cyan);
+}
+
+.ptag--teal {
+  background: hsla(172, 72%, 40%, 0.12);
+  border: 1px solid hsla(172, 72%, 40%, 0.3);
+  color: hsl(172, 72%, 60%);
 }
 
 .ptag--green {
